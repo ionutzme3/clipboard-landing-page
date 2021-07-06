@@ -1,0 +1,23 @@
+.partners {
+    padding: 5em 0;
+    text-align: center;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        img {
+            padding: 3em 0;
+        }
+    }
+
+}

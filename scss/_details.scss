@@ -1,0 +1,17 @@
+.details {
+    padding: 5em 0;
+    text-align: center;
+
+    @include breakpoint-up(medium) {
+        &__content {
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
+
+    img {
+        margin-top: 5em;
+        width: 100%;
+        object-fit: cover;
+    }
+}

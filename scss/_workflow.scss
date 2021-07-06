@@ -1,0 +1,20 @@
+.workflow {
+    text-align: center;
+
+    &__wrapper {
+        margin-top: 3em;
+
+        &--item {
+            padding: 0 1em;
+        }
+        @include breakpoint-up(medium) {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+        }
+
+        img {
+            margin: 3em 0;
+        }
+    }
+}

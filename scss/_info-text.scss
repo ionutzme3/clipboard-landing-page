@@ -1,0 +1,11 @@
+.info-text {
+    text-align: center;
+    padding-bottom: 5em;
+
+    @include breakpoint-up(medium) {
+        &__content {
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
+}

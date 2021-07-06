@@ -1,0 +1,46 @@
+.footer {
+    text-align: center;
+    padding: 5em 0;
+
+    &__wrapper {
+        @include breakpoint-up(medium) {
+            display: flex;
+            align-items: center;
+            gap: 3em;
+        }
+
+        .footer-list {
+            @include breakpoint-up(medium) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                text-align: left;
+                column-gap: 3em;
+            }
+        }
+        .footer__social-icons {
+            @include breakpoint-up(medium) {
+                margin-left: auto;
+            }
+        }
+    }
+    .footer-list {
+        padding: 2em 0;
+        a {
+            display: inline-block;
+            padding: 1em 0;
+            color: $darkGrayishBlue;
+            font-weight: 600;
+            transition: color 300ms ease-in;
+
+            &:hover {
+                color: $strongCyan;
+            }
+        }
+
+    }
+    &__social-icons {
+        img {
+            margin: 0 1em;
+        }
+    }
+}

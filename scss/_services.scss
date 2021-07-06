@@ -1,0 +1,35 @@
+.services {
+    text-align: center;
+
+    &__wrapper--items {
+        margin-top: 5em;
+        
+        .item {
+            margin-top: 5em;
+        }
+    }
+    @include breakpoint-up(medium) {
+        &__wrapper {
+            display: flex;
+            gap: 1em;
+
+            &--image {
+                width: 100%;
+            }
+            &--items {
+                width: 100%;
+                margin-top: 0;
+                text-align: left;
+                padding: 0 0 0 2em;
+
+                .item {
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
